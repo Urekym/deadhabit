@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Dead Habit",
+  "version": "1.0.0",
+  "description": "a tiny tool that stops you from opening those time wasting websites when you should be working, because let’s be honest your my self control is fucked",
+  "permissions": [
+    "declarativeNetRequest",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Dead Habit - Kill those screaming websites"
+},
+
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
