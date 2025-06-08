@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+<meta charset="utf-8">
+
+<title>Dead Habit Block list</title>
+
+<style>
+  
+  body { font: 15px/1.5 system-ui, sans-serif; margin: 24px auto; max-width: 540px; }
+  textarea { width: 100%; height: 200px; }
+  button { margin-top: 10px; }
+  #status { margin-left: 8px; color: rgb(123, 124, 123); }
+  code { background: #eee; padding: 0 3px; }
+
+</style>
+</head>
+
+
+<body>
+  <h2>Websites to block</h2>
+
+
+  <p>One domain per line (no <code>https://</code>):</p>
+
+
+  <textarea id="list"></textarea><br>
+
+
+  <button id="save">Save</button><span id="status"></span>
+
+  <p><small>Changes take effect instantly.  Reload any open tab.</small></p>
+  <script src="options.js"></script>
+
+
+</body>
+</html>
+
